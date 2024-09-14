@@ -1,6 +1,6 @@
 export const planetas = [
     {
-        "img": "https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal.jpg",
+        "img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/06/representacao-terra.jpg",
         "nome": "Terra",
         "descricaoBreve": "O único planeta conhecido por abrigar vida.",
         "descricao": "A Terra tem uma atmosfera rica em oxigênio e é coberta por água em sua maior parte, o que possibilita a vida como a conhecemos. O planeta também possui uma superfície diversificada com montanhas, oceanos e desertos.",
@@ -10,7 +10,7 @@ export const planetas = [
         "periodoRotacaoDias": 1
     },
     {
-        "img": "https://www.ufmg.br/espacodoconhecimento/wp-content/uploads/2022/12/501365main_pia00104-full_full-1024x1024.jpg",
+        "img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/06/representacao-venus.jpg",
         "nome": "Vênus",
         "descricaoBreve": "O planeta mais quente do Sistema Solar.",
         "descricao": "Vênus possui uma atmosfera densa e composta principalmente de dióxido de carbono, o que causa um forte efeito estufa e faz com que suas temperaturas sejam extremamente altas.",
@@ -20,7 +20,7 @@ export const planetas = [
         "periodoRotacaoDias": 243
     },
     {
-        "img": "https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal.jpg",
+        "img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/06/representacao-mercurio.jpg",
         "nome": "Mercúrio",
         "descricaoBreve": "O menor planeta do Sistema Solar.",
         "descricao": "Mercúrio é o planeta mais próximo do Sol. Sua superfície é coberta por crateras e, devido à sua proximidade, experimenta temperaturas extremas.",
@@ -30,7 +30,7 @@ export const planetas = [
         "periodoRotacaoDias": 58.6
     },
     {
-        "img": "https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal.jpg",
+        "img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/06/representacao-marte.jpg",
         "nome": "Marte",
         "descricaoBreve": "Conhecido como o planeta vermelho.",
         "descricao": "Marte tem uma superfície vermelha devido à presença de óxido de ferro. É um dos planetas mais explorados em busca de sinais de vida passada ou presente.",
@@ -40,7 +40,7 @@ export const planetas = [
         "periodoRotacaoDias": 1.03
     },
     {
-        "img": "https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal.jpg",
+        "img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/06/representacao-jupiter.jpg",
         "nome": "Júpiter",
         "descricaoBreve": "O maior planeta do Sistema Solar.",
         "descricao": "Júpiter é um gigante gasoso com mais de 60 luas. Sua característica mais famosa é a Grande Mancha Vermelha, uma tempestade gigante que dura há séculos.",
@@ -50,7 +50,7 @@ export const planetas = [
         "periodoRotacaoDias": 0.41
     },
     {
-        "img": "https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal.jpg",
+        "img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/06/representacao-saturno.jpg",
         "nome": "Saturno",
         "descricaoBreve": "Famoso por seus belos anéis.",
         "descricao": "Saturno é o segundo maior planeta do Sistema Solar e tem um extenso sistema de anéis feitos de gelo e rocha. É um gigante gasoso, como Júpiter.",
@@ -60,7 +60,7 @@ export const planetas = [
         "periodoRotacaoDias": 0.45
     },
     {
-        "img": "https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal.jpg",
+        "img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/06/representacao-urano.jpg",
         "nome": "Urano",
         "descricaoBreve": "Um planeta inclinado e gelado.",
         "descricao": "Urano tem uma inclinação axial extrema, o que significa que ele 'rola' de lado enquanto orbita o Sol. Suas temperaturas são incrivelmente baixas e é composto principalmente de gelo e gás.",
@@ -70,7 +70,7 @@ export const planetas = [
         "periodoRotacaoDias": 0.72
     },
     {
-        "img": "https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal.jpg",
+        "img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/06/representacao-netuno.jpg",
         "nome": "Netuno",
         "descricaoBreve": "O planeta mais distante do Sol.",
         "descricao": "Netuno é conhecido por seus ventos extremamente rápidos e atmosfera composta de hidrogênio, hélio e metano. É um gigante gelado, semelhante a Urano.",
@@ -80,7 +80,7 @@ export const planetas = [
         "periodoRotacaoDias": 0.67
     },
     {
-        "img": "https://segredosdomundo.r7.com/wp-content/uploads/2020/01/planeta-terra-conheca-tudo-sobre-o-nosso-planeta-natal.jpg",
+        "img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/06/representacao-plutao.jpg",
         "nome": "Plutão",
         "descricaoBreve": "Agora classificado como planeta anão.",
         "descricao": "Plutão era considerado o nono planeta do Sistema Solar até ser reclassificado como planeta anão. Ele tem uma órbita excêntrica e é composto de gelo e rocha.",
