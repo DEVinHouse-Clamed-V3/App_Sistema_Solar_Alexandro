@@ -1,92 +1,89 @@
 import React from 'react';
 import { Text, View, Image, StyleSheet } from 'react-native';
 
-export function Planet({ nome, img, descricaoBreve, velocidadeOrbitalMediaKmS, quantidadeSatelites, areaSuperficieKm2, periodoRotacaoDias }) {
+export function Planet({ nome, img, descricaoBreve, descricao, velocidadeOrbitalMediaKmS, quantidadeSatelites, areaSuperficieKm2, periodoRotacaoDias }) {
   return (
-    <View style={styles.conteinerCentro}>
-      <Text style={styles.tituloTextCard}>{nome}</Text>
+    <View style={styles.containerCentro}>
+      <Text style={styles.tituloTextoCard}>{nome}</Text>
       
-      <Image source={{ uri: img }} style={styles.imgCard} />
+      <Image source={{ uri: img }} style={styles.imagemCard} />
       
-      <View style={styles.conteinerCentro}>
-        <Text style={styles.descricaoTextCard}>{descricaoBreve}</Text>
+      <View style={styles.containerTexto}>
+        <Text style={styles.descricaoTextoCard}>{descricao}</Text>
+      </View>
+      
+      <View style={styles.espacoCard}>
+        <Text style={styles.textoEtiquetaCard}>Velocidade Orbital Média:</Text>
+        <Text style={styles.textoValorCard}>{velocidadeOrbitalMediaKmS} km/s</Text>
       </View>
 
       <View style={styles.espacoCard}>
-        <Text style={styles.textCardLabel}>Average Orbital Speed:</Text>
-        <Text style={styles.textCardValue}>{velocidadeOrbitalMediaKmS} km/s</Text>
+        <Text style={styles.textoEtiquetaCard}>Satélites:</Text>
+        <Text style={styles.textoValorCard}>{quantidadeSatelites}</Text>
       </View>
 
       <View style={styles.espacoCard}>
-        <Text style={styles.textCardLabel}>Satellites:</Text>
-        <Text style={styles.textCardValue}>{quantidadeSatelites}</Text>
+        <Text style={styles.textoEtiquetaCard}>Área de Superfície:</Text>
+        <Text style={styles.textoValorCard}>{areaSuperficieKm2} km²</Text>
       </View>
 
       <View style={styles.espacoCard}>
-        <Text style={styles.textCardLabel}>Surface Area:</Text>
-        <Text style={styles.textCardValue}>{areaSuperficieKm2} km²</Text>
-      </View>
-
-      <View style={styles.espacoCard}>
-        <Text style={styles.textCardLabel}>Rotation Period:</Text>
-        <Text style={styles.textCardValue}>{periodoRotacaoDias}</Text>
+        <Text style={styles.textoEtiquetaCard}>Período de Rotação:</Text>
+        <Text style={styles.textoValorCard}>{periodoRotacaoDias}</Text>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  conteinerCentro: {
+  containerCentro: {
     justifyContent: "center",
     alignItems: "center",
-    borderRadius: 10,
-    margin: 20,
+    borderRadius: 15,
+    margin: 15,
     backgroundColor: "#111", 
     padding: 20,
     shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 5,
-    },
     shadowOpacity: 0.34,
     shadowRadius: 6.27,
     elevation: 10,
   },
-  tituloTextCard: {
+  tituloTextoCard: {
     color: "#FFF", 
-    fontSize: 25,
+    fontSize: 28,
     fontWeight: "bold",
-    marginBottom: 10,
+    marginBottom: 15,
     textAlign: "center",
   },
-  descricaoTextCard: {
+  containerTexto: {
+    marginBottom: 15,
+    paddingHorizontal: 10,
+  },
+  descricaoTextoCard: {
     color: "#FFF", 
-    fontSize: 15,
-    fontWeight: "normal",
+    fontSize: 16,
     textAlign: "center",
-    marginBottom: 10,
   },
   espacoCard: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     width: "100%",
-    marginVertical: 5,
+    marginVertical: 8,
   },
-  imgCard: {
-    width: 200,
-    height: 200,
-    borderRadius: 100,
-    marginBottom: 15,
+  imagemCard: {
+    width: 220,
+    height: 220,
+    borderRadius: 110,
+    marginBottom: 20,
   },
-  textCardLabel: {
+  textoEtiquetaCard: {
     color: "#A9A9A9", 
-    fontSize: 16,
-    fontWeight: "normal",
+    fontSize: 17,
   },
-  textCardValue: {
+  textoValorCard: {
     color: "#FFD700", 
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: "bold",
   },
 });
