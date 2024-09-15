@@ -1,13 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  SafeAreaView,
-  ScrollView,
-} from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, ScrollView } from "react-native";
 import { planetas } from "./planetas";
+import { Planet } from './Planet';
 
 export default function App() {
   return (
@@ -15,42 +9,22 @@ export default function App() {
       <StatusBar style="light" />
 
       <View style={styles.header}>
-        <Text style={styles.textoHeader}>Vamos Explorar</Text>
+        <Text style={styles.textoHeader}>Vamos Explorar o Sistema Solar</Text>
       </View>
 
       <View style={styles.container}>
         <ScrollView>
-          {planetas.map((card) => (
-            <View key={card.nome} style={styles.conteinerCentro}>
-              <Text style={styles.tituloTextCard}>{card.nome}</Text>
-              
-              <Image source={{ uri: card.img }} style={styles.imgCard} />
-              
-              <View style={styles.conteinerCentro}>
-              <Text style={styles.descricaoTextCard}>{card.descricaoBreve}</Text>
-              </View>
-
-
-              <View style={styles.espacoCard}>
-                <Text style={styles.textCardLabel}>Average Orbital Speed:</Text>
-                <Text style={styles.textCardValue}>{card.velocidadeOrbitalMediaKmS} km/s</Text>
-              </View>
-
-              <View style={styles.espacoCard}>
-                <Text style={styles.textCardLabel}>Satellites:</Text>
-                <Text style={styles.textCardValue}>{card.quantidadeSatelites}</Text>
-              </View>
-
-              <View style={styles.espacoCard}>
-                <Text style={styles.textCardLabel}>Surface Area:</Text>
-                <Text style={styles.textCardValue}>{card.areaSuperficieKm2} km²</Text>
-              </View>
-
-              <View style={styles.espacoCard}>
-                <Text style={styles.textCardLabel}>Rotation Period:</Text>
-                <Text style={styles.textCardValue}>{card.periodoRotacaoDias}</Text>
-              </View>
-            </View>
+          {planetas.map((planeta) => (
+            <Planet 
+              key={planeta.nome}
+              nome={planeta.nome}
+              img={planeta.img}
+              descricaoBreve={planeta.descricaoBreve}
+              velocidadeOrbitalMediaKmS={planeta.velocidadeOrbitalMediaKmS}
+              quantidadeSatelites={planeta.quantidadeSatelites}
+              areaSuperficieKm2={planeta.areaSuperficieKm2}
+              periodoRotacaoDias={planeta.periodoRotacaoDias}
+            />
           ))}
         </ScrollView>
       </View>
@@ -69,68 +43,15 @@ const styles = StyleSheet.create({
   },
   header: {
     backgroundColor: "#1F1F43", 
-    paddingVertical: 20,
+    paddingVertical: 15,
     justifyContent: "center",
     alignItems: "center", 
     marginTop: 30,
+    
   },
   textoHeader: {
-    color: "#FFD700", 
-    fontSize: 40,
-    fontWeight: "bold"
-  },
-  conteinerCentro: {
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: 10,
-    margin: 20,
-    backgroundColor: "#111", 
-    padding: 20,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 5,
-    },
-    shadowOpacity: 0.34,
-    shadowRadius: 6.27,
-    elevation: 10,
-  },
-  tituloTextCard: {
     color: "#FFF", 
     fontSize: 25,
-    fontWeight: "bold",
-    marginBottom: 10,
-    textAlign: "center",
-  },
-  descricaoTextCard: {
-    color: "#FFf", 
-    fontSize: 15,
-    fontWeight: "normal",
-    textAlign: "center",
-    marginBottom: 10,
-  },
-  espacoCard: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    width: "100%",
-    marginVertical: 5,
-  },
-  imgCard: {
-    width: 200,
-    height: 200,
-    borderRadius: 100,
-    marginBottom: 15,
-  },
-  textCardLabel: {
-    color: "#A9A9A9", 
-    fontSize: 16,
-    fontWeight: "normal",
-  },
-  textCardValue: {
-    color: "#FFD700", 
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-
+    fontWeight: "bold"
+  }
 });
