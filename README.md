@@ -14,6 +14,7 @@ Este é um aplicativo em React Native que permite aos usuários explorar os plan
 ![image](https://github.com/user-attachments/assets/ad43a029-801e-4492-a3b0-9bbfb4a318be)
 ![image](https://github.com/user-attachments/assets/31ccfbe7-83a9-4fc0-80f9-838bb8a219eb)
 
+
 ## Tecnologias Utilizadas
 
 - **[React Native](https://reactnative.dev/):** Framework para desenvolvimento de aplicativos móveis.
