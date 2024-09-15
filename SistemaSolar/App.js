@@ -25,6 +25,11 @@ export default function App() {
               <Text style={styles.tituloTextCard}>{card.nome}</Text>
               
               <Image source={{ uri: card.img }} style={styles.imgCard} />
+              
+              <View style={styles.conteinerCentro}>
+              <Text style={styles.descricaoTextCard}>{card.descricaoBreve}</Text>
+              </View>
+
 
               <View style={styles.espacoCard}>
                 <Text style={styles.textCardLabel}>Average Orbital Speed:</Text>
@@ -78,7 +83,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 10,
-    margin: 10,
+    margin: 20,
     backgroundColor: "#111", 
     padding: 20,
     shadowColor: "#000",
@@ -91,11 +96,18 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   tituloTextCard: {
-    color: "#FFD700", 
+    color: "#FFF", 
     fontSize: 25,
     fontWeight: "bold",
     marginBottom: 10,
     textAlign: "center",
+  },
+  descricaoTextCard: {
+    color: "#FFf", 
+    fontSize: 15,
+    fontWeight: "normal",
+    textAlign: "center",
+    marginBottom: 10,
   },
   espacoCard: {
     flexDirection: "row",
